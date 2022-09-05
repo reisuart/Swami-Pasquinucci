@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+::selection {
+    color: #231e20;
+    background: #fef1e4;
+  }
+
+body {
+    background: rgb(236,101,67);
+    background: linear-gradient(145deg, rgba(236,101,67,1) 0%, rgba(241,157,82,1) 100%);
+    cursor: default;
+}
+
+.uc {
+    color: #fef1e4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+
+.uc span {
+    font-weight: 400;
+    font-size: 15px;
+
+}
