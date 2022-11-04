@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scrollbar.css">
+    <script src="https://kit.fontawesome.com/402a7f6b66.js" crossorigin="anonymous"></script>
+
+    <!-- Title -->
+    <title>Swami Design</title>
+</head>
+<body class="w-full font-Outfit bg-gradient-to-r from-sp-darkorange to-sp-lightorange">
+
+    <!-- Ko-fi donation button -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('reisu_art', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Donate',
+        'floating-chat.donateButton.background-color': '#EC6543',
+        'floating-chat.donateButton.text-color': '#231E20'
+      });
+    </script>
+
+    <!-- Header -->
+    <header>
+        <nav class="container relative flex items-center py-4 mt-2 sm:mt-2 px-10">
+            <div class="flex-1"><img class="h-10 w-auto" src="./imgs/Logo Nero.svg"></div>
+            <ul class="hidden md:flex justify-end items-center gap-12 text-sp-brown font-bold uppercase text-xs">
+                <li class="cursor-pointer"><a href="#Home">Home</a></li>
+                <li class="cursor-pointer"><a href="#About">Chi sono</a></li>
+                <li class="cursor-pointer"><a href="#Portfolio">Portfolio</a></li>
+                <li class="cursor-pointer"><a href="#Contact">Contatti</a></li>
+            </ul>
+            <div class="flex md:hidden flex-1 justify-end"><i class="text-base text-sp-brown fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <div class="h-[90vh] overflow-hidden mx-4 rounded-2xl">
+        <div class="h-full overflow-y-scroll">
+            <!-- Welcome -->
+            <section class="relative w-full bg-white py-24 rounded-t-2xl" id="Home">
+                <div class="container">
+                    <h1 class="font-bold text-4xl text-center sm:text-left">Benvenuto!</h1>
+                    <div class="flex flex-col items-center sm:items-start">
+                        <p class="pb-4 text-center sm:text-left">Ciao! Sono Swami Pasquinucci<br>e sono una Graphic Designer e Illustratrice.</p>
+                        <button class="bg-sp-lightorange rounded py-1 px-4 font-bold text-white mt">Scopri di più</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me -->
+            <section class="relative w-full bg-sp-darkeryellow py-11" id="About">        
+                <div class="container">
+                    <h1 class="font-bold text-4xl text-center sm:text-left">Chi sono</h1>
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-10">
+                        <div class="w-64 sm:w-1/4 xl:w-64 h-auto overflow-hidden rounded-lg border-4 border-sp-brown"><img src="./imgs/Foto mia.png"></div>
+                        <div class="w-full sm:w-3/5 flex flex-col items-center sm:items-start md:shrink-0">
+                            <p class="text-center sm:text-left text-base sm:text-sm font-bold">Sono Swami Pasquinucci.</p>
+                            <p class="text-center sm:text-left text-base sm:text-sm pt-3">Ho 20 anni e sono un tecnico grafico e audiovisivo.<br>Principalmente i miei interessi dal punto di vista grafico riguardano i design di prodotti pubblicitari digitali e stampabili, non includendo l’editing video; per quanto riguarda i miei disegni, principalmente svolgo lavori semi-realistici, più sullo stile anime/cartoon.</p>
+                            <p class="text-center sm:text-left text-base sm:text-sm pt-3">La cosa che preferisco di più quando lavoro è il riuscire a realizzare esattamente quello che ha in mente il cliente e vedere la soddisfazione che provano nell’essere riusciti a trovare una persona che riesce a trasformare un idea in un qualcosa di concreto.</p>
+                            <p class="text-center sm:text-left text-base sm:text-sm pt-3">Se sono riuscita ad avere la tua attenzione e vorresti lavorare con me, fai un salto nella sezione <a class="bg-sp-lightorange px-2 font-bold rounded" href="#Contact">Contatti</a>!</p>
+                            <button class="bg-sp-darkorange rounded py-1 px-4 font-bold text-white mt-4"><a href="./Curriculum.html">Vai al mio CV</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section class="relative w-full bg-white p-11" id="Portfolio">
+                <div class="container">
+                    <h1 class="font-bold text-4xl text-center sm:text-left">Portfolio Design</h1>
+                    <div class="grid grid-cols-1 2xl:grid-cols-6 2lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-4">
+                        <!-- Post Infaa -->
+                        <div class="relative">
+                            <div class="relative w-fit h-fit overflow-hidden rounded-lg">
+                                <div class="z-20 absolute bottom-2 left-3 text-white opacity-100">
+                                    <p class="font-bold">Infaa</p>
+                                    <p class="text-xs italic">Twitch Layout for <a class="hover:text-sp-darkorange text-sp-lightorange transition ease-in-out" href="https://www.twitch.tv/lnfaa" target="_blank">Infaa</a></p>
+                                </div>   
+                                <div class="z-10 absolute w-full h-full bg-gradient-to-b from-transparent to-black opacity-60"></div>
+                                <img class="md:w-full md:h-full sm:w-fit sm:h-auto object-cover object-center align-middle" src="./imgs/design 1-Infaa.png">
+                            </div>
+                        </div>
+                        <!-- Post Steel -->
+                        <div class="relative">
+                            <div class="relative w-fit h-fit overflow-hidden rounded-lg">
+                                <div class="z-20 absolute bottom-2 left-3 text-white opacity-100">
+                                    <p class="font-bold">Steel Natale</p>
+                                    <p class="text-xs italic">Gift Card Natale per <a class="hover:text-sp-darkorange text-sp-lightorange transition ease-in-out" href="https://www.parrucchieralecco.it">Steel Hair Colour Experience</a></p>
+                                </div>   
+                                <div class="z-10 absolute w-full h-full bg-gradient-to-b from-transparent to-black opacity-60"></div>
+                                <img class="md:w-full md:h-full sm:w-fit sm:h-auto object-cover object-center align-middle" src="./imgs/design 2-Steel.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h1 class="font-bold text-4xl text-center sm:text-left pt-4">Portfolio Arte</h1>
+                    <div class="grid grid-cols-1 2xl:grid-cols-6 2lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-4">
+                        <!-- Commission Romy / Simeon -->
+                        <div class="relative">
+                            <div class="relative w-fit h-fit overflow-hidden rounded-lg">
+                                <div class="z-20 absolute bottom-2 left-3 text-white opacity-100">
+                                    <p class="font-bold">Simeon</p>
+                                    <p class="text-xs italic">Commissione per Romy360.<br><span class="font-bold">Personaggio</span>: Simeon di <a class="hover:text-sp-darkorange text-sp-lightorange transition italic font-bold ease-in-out" href="https://shallwedate.jp/obeyme/en/" target="_blank">Obey Me!</a></p>
+                                </div>   
+                                <div class="z-10 absolute w-full h-full bg-gradient-to-b from-transparent to-black opacity-60"></div>
+                                <img class="md:w-full md:h-full sm:w-fit sm:h-auto object-cover object-center align-middle" src="./imgs/Art - Commission Romy360.png">
+                            </div>
+                        </div>
+
+                        <!-- Commission Dinah / Belphegor -->
+                        <div class="relative">
+                            <div class="relative w-fit h-fit overflow-hidden rounded-lg">
+                                <div class="z-20 absolute bottom-2 left-3 text-white">
+                                    <p class="font-bold">Belphegor</p>
+                                    <p class="text-xs italic">Commissione per Dinah<br><span class="font-bold">Personaggio</span>: Belphegor di <a class="hover:text-sp-darkorange text-sp-lightorange transition italic font-bold ease-in-out" href="https://shallwedate.jp/obeyme/en/" target="_blank">Obey Me!</a></p>
+                                </div>   
+                                <div class="z-10 absolute w-full h-full bg-gradient-to-b from-transparent to-black opacity-60"></div>
+                                <img class="md:w-full md:h-full sm:w-fit sm:h-auto object-cover object-center align-middle" src="./imgs/Art - Commission Dinah.png">
+                            </div>
+                        </div>
+
+                        <!-- Commission Ellen -->
+                        <div class="relative">
+                            <div class="relative w-fit h-fit overflow-hidden rounded-lg">
+                                <div class="z-20 absolute bottom-2 left-3 text-white opacity-100">
+                                    <p class="font-bold">Hu Tao</p>
+                                    <p class="text-xs italic">Commissione per <a href="https://www.instagram.com/blackrose50101/">Ellen Kim</a><br><span class="font-bold">Personaggio</span>: Hu Tao, <a class="hover:text-sp-darkorange text-sp-lightorange font-bold italic transition ease-in-out" href="https://genshin.hoyoverse.com/en/" target="_blank">Genshin Impact</a></p>
+                                </div>   
+                                <div class="z-10 absolute w-full h-full bg-gradient-to-b from-transparent to-black opacity-60"></div>
+                                <img class="md:w-full md:h-full sm:w-fit sm:h-auto object-cover object-center align-middle bg-sp-brown" src="./imgs/Art - Commission Ellen Kim.png">
+                            </div>
+                        </div>
+
+                        <!-- Commission Tithus / T'ithus Tia x Y'shtola -->
+                        <div class="relative">
+                            <div class="relative w-fit h-fit overflow-hidden rounded-lg">
+                                <div class="z-20 absolute bottom-2 left-3 text-white opacity-100">
+                                    <p class="font-bold">T'ithus Tia e Y'shtola</p>
+                                    <p class="text-xs italic">Commissione per Tithus<br><span class="font-bold">Personaggi</span>: T'ithus Tia (OC) e Y'shtola di <a class="hover:text-sp-darkorange text-sp-lightorange transition font-bold italic ease-in-out" href="https://it.finalfantasyxvi.com" target="_blank">Final Fantasy XVI</a></p>
+                                </div>   
+                                <div class="z-10 absolute w-full h-full bg-gradient-to-b from-transparent to-black opacity-60"></div>
+                                <img class="md:w-full md:h-full sm:w-fit sm:h-auto object-cover object-center align-middle " src="./imgs/Art - Commission Tithus.png">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="mt-8 w-full text-center">
+                        Vedi di più su 
+                        <a class="bg-sp-darkorange hover:bg-sp-brown text-sp-darkeryellow transition ease-in-out py-1 px-1.5 rounded mx-1" href="https://www.instagram.com/swamidesign.it/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                         o 
+                        <a class="bg-sp-darkorange hover:bg-sp-brown text-sp-darkeryellow transition ease-in-out  py-1 px-1.5 rounded mx-1" href="https://ko-fi.com/reisu_art" target="_blank">
+                            <img class="h-3.5 w-auto inline -mt-1" src="./imgs/ko-fi-icon.svg">
+                            Ko-fi
+                        </a>
+                        !
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contatti -->
+            <section class="relative w-full bg-sp-darkeryellow p-11" id="Contact">
+                <div class="container">
+                    <h1 class="font-bold text-4xl text-center sm:text-left">Contatti</h1>
+                    <div class="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10">
+                        <table class="border-separate border-spacing-x-2 bg-sp-lightyellow p-4 rounded-xl text-sp-brown">
+                            <tr>
+                                <td class="text-center"><i class="fa-solid fa-location-dot"></i></td>
+                                <td>Via Roma, 27 - 24034, Cisano Bergamasco (BG)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><i class="fa-solid fa-envelope"></i></td>
+                                <td>swami.pasquinucci@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><i class="fa-solid fa-phone"></i></td>
+                                <td><a href="tel:+393776637223" title="Chiamami">+39 377 663 7223</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><img src="./imgs/VAT.svg"></td>
+                                <td>04622430165</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr class="border-sp-darkeryellow border-2 rounded mt-2">
+                                    <p class="pt-2">Se desideri contattarmi, compila il form qui presente.<br>Tenterò di rispondere il prima possibile. Grazie!</p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="container p-5 bg-sp-lightorange w-full xl:w-3/5 rounded-xl">
+                            <form action="mailto:">
+                                <table class="w-full border-separate border-spacing-x-2">
+                                    <tr>
+                                        <td>
+                                            <label class="text-xs text-white" for="name"><span>Nome</span></label><br>
+                                            <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange" type="text" name="name"  id="name" placeholder="Il tuo nome" required>
+                                        </td>
+                                        <td>
+                                            <label class="text-xs text-white" for="mail">Indirizzo E-mail</label><br>
+                                            <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange" type="text" name="mail"  id="mail" placeholder="La tua e-mail" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <label class="text-xs text-white" for="object">Oggetto</label><br>
+                                            <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange" type="text" name="object"    id="object" placeholder="Di cosa si tratta la mail?" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <label class="text-xs text-white" for="message">Messaggio</label><br>
+                                            <textarea class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange" name="message" id="message"   cols="30" rows="10" placeholder="Scrivi qualcosa..." required></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="text-center pt-2">
+                                            <button class="bg-sp-darkorange hover:bg-sp-darkeryellow text-sp-lightyellow hover:text-sp-brown hover:shadow-md py-2 px-4 rounded  transition ease-in-out cursor-pointer">
+                                                <input class="uppercase font-bold tracking-wide cursor-pointer" type="submit" value="submit">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-sp-brown py-10">
+                <div class="container flex flex-col md:flex-row items-center">
+                    <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-8">
+                        <img class="h-10 w-auto" src="./imgs/Logo darker yellow.svg">
+                        <ul class="flex text-sp-darkeryellow uppercase gap-10 text-xs">
+                            <li class="cursor-pointer"><a href="#Home">Home</a></li>
+                            <li class="cursor-pointer"><a href="#About">Chi sono</a></li>
+                            <li class="cursor-pointer"><a href="#Portfolio">Portfolio</a></li>
+                            <li class="cursor-pointer"><a href="#Contact">Contatti</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex flex-1 gap-10 mt-8 md:mt-0 justify-end items-center">
+                            <li><a href="https://www.instagram.com/swamidesign.it/" target="_blank"><i class="h-3.5 w-auto text-sp-darkeryellow fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/swamidesign_it" target="_blank"><i class="h-3.5 w-auto text-sp-darkeryellow fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/swami-pasquinucci-50b85b213/" target="_blank"><i class="h-3.5 w-auto text-sp-darkeryellow fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://ko-fi.com/reisu_art" target="_blank"><img class="h-3.5 w-auto" src="./imgs/ko-fi-icon.svg"></a></li>
+                        </ul>
+                    </div>            
+                </div>
+                <div class="text-center text-xs text-sp-darkeryellow opacity-30 pt-4">© 2022 Swami Pasquinucci Design. All rights reserved. Made with <a class="text-sp-darkorange hover:text-sp-lightorange transition ease-in-out" href="https://tailwindcss.com">Tailwindcss</a> and love.</div>
+            </footer>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
