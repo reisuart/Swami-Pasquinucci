@@ -50,7 +50,7 @@
     <div class="h-[90vh] overflow-hidden mx-4 mb-2 rounded-2xl">
         <div class="h-full overflow-y-scroll noscrollbarshowing">
             <!-- Welcome -->
-            <section class="relative w-full bg-white py-24" id="Home">
+            <section class="relative w-full bg-white px-2 sm:px-11 py-10" id="Home">
                 <div class="container">
                     <h1 class="font-bold text-4xl text-center sm:text-left">Benvenuto!</h1>
                     <div class="flex flex-col items-center sm:items-start">
@@ -61,7 +61,7 @@
             </section>
 
             <!-- About Me -->
-            <section class="relative w-full bg-sp-darkeryellow py-11" id="About">        
+            <section class="relative w-full bg-sp-darkeryellow px-2 sm:px-11 py-10" id="About">        
                 <div class="container">
                     <h1 class="font-bold text-4xl text-center sm:text-left">Chi sono</h1>
                     <div class="flex flex-col sm:flex-row items-center sm:items-start gap-10">
@@ -69,7 +69,12 @@
                         <div class="w-full sm:w-3/5 flex flex-col items-center sm:items-start md:shrink-0">
                             <p class="text-center sm:text-left text-base sm:text-sm font-bold">Sono Swami Pasquinucci.</p>
                             <p class="text-center sm:text-left text-base sm:text-sm pt-3">Ho 20 anni e sono un tecnico grafico e audiovisivo.<br>Principalmente i miei interessi dal punto di vista grafico riguardano i design di prodotti pubblicitari digitali e stampabili, non includendo l’editing video; per quanto riguarda i miei disegni, principalmente svolgo lavori semi-realistici, più sullo stile anime/cartoon.</p>
-                            <p class="text-center sm:text-left text-base sm:text-sm pt-3">La cosa che preferisco di più quando lavoro è il riuscire a realizzare esattamente quello che ha in mente il cliente e vedere la soddisfazione che provano nell’essere riusciti a trovare una persona che riesce a trasformare un idea in un qualcosa di concreto.</p>
+                            <p class="text-center sm:text-left text-base sm:text-sm pt-3">I punti forti del mio lavoro sono: 
+                                <ul class="pl-4 text-center sm:text-left">
+                                    <li style="list-style-type: circle;">riuscire a realizzare esattamente quello che ha in mente il cliente;</li>
+                                    <li style="list-style-type: circle;">soddisfare il cliente per essere riuscita a trasformare la loro idea in qualcosa di concreto.</li>
+                                </ul>
+                            </p>
                             <p class="text-center sm:text-left text-base sm:text-sm pt-3">Se sono riuscita ad avere la tua attenzione e vorresti lavorare con me, fai un salto nella sezione <a class="bg-sp-lightorange px-2 font-bold rounded" href="#Contact">Contatti</a>!</p>
                             <button class="bg-sp-darkorange rounded py-1 px-4 font-bold text-white mt-4"><a href="./Curriculum.html">Vai al mio CV</a></button>
                         </div>
@@ -78,7 +83,7 @@
             </section>
 
             <!-- Portfolio -->
-            <section class="relative w-full bg-white p-11" id="Portfolio">
+            <section class="relative w-full bg-white px-2 sm:px-11 py-10" id="Portfolio">
                 <div class="container">
                     <h1 class="font-bold text-4xl text-center sm:text-left">Portfolio Design</h1>
                     <div class="grid grid-cols-1 2xl:grid-cols-6 2lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-4">
@@ -177,62 +182,74 @@
             </section>
 
             <!-- Contatti -->
-            <section class="relative w-full bg-sp-darkeryellow p-11" id="Contact">
+            <section class="relative w-full bg-sp-darkeryellow px-2 sm:px-11 py-10" id="Contact">
                 <div class="container">
                     <h1 class="font-bold text-4xl text-center sm:text-left">Contatti</h1>
-                    <div class="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10">
-                        <table class="border-separate border-spacing-x-2 bg-sp-lightyellow p-4 rounded-xl text-sp-brown">
-                            <tr>
-                                <td class="text-center"><i class="fa-solid fa-location-dot"></i></td>
-                                <td>Via Roma, 27 - 24034, Cisano Bergamasco (BG)</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center"><i class="fa-solid fa-envelope"></i></td>
-                                <td>swami.pasquinucci@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td class="text-center"><i class="fa-solid fa-phone"></i></td>
-                                <td><a href="tel:+393776637223" title="Chiamami">+39 377 663 7223</a></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center"><img src="./public/imgs/VAT.svg"></td>
-                                <td>04622430165</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <hr class="border-sp-darkeryellow border-2 rounded mt-2">
-                                    <p class="pt-2">Se desideri contattarmi, compila il form qui presente.<br>Tenterò di rispondere il prima possibile. Grazie!</p>
-                                </td>
-                            </tr>
-                        </table>
+                    <div class="flex flex-col lg:flex-row justify-center items-stretch gap-10">
+                        <div class="flex flex-col bg-sp-lightyellow p-4 rounded-xl text-sp-brown">
+                            <table class="flex flex-1 border-separate border-spacing-x-2 w-full">
+                                <tr>
+                                    <td class="text-center w-[35px]"><i class="fa-solid fa-location-dot"></i></td>
+                                    <td>Via Roma, 27 - 24034, Cisano Bergamasco (BG)</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center w-[35px]"><i class="fa-solid fa-envelope"></i></td>
+                                    <td>swami.pasquinucci@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center w-[35px]"><i class="fa-solid fa-phone"></i></td>
+                                    <td><a href="tel:+393776637223" title="Chiamami">+39 377 663 7223</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center w-[35px]"><img class="w-[20px] mx-auto" src="./public/imgs/VAT.svg"></td>
+                                    <td>04622430165</td>
+                                </tr>
+                            </table>
+                            <table class="border-separate border-spacing-x-2 w-full">
+                                <tr>
+                                    <td>
+                                        <hr class="border-sp-darkeryellow border-2 rounded mt-2">
+                                        <p class="pt-2 text-center lg:text-left">Se desideri contattarmi, compila il form qui presente.<br>Risponderò il prima possibile. Grazie!</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        
 
                         <div class="container p-5 bg-sp-lightorange w-full xl:w-3/5 rounded-xl">
                             <form action="mailto:">
                                 <table class="w-full border-separate border-spacing-x-2">
+                                    
                                     <tr>
                                         <td>
-                                            <label class="text-xs text-white" for="name"><span>Nome</span></label><br>
-                                            <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange" type="text" name="name"  id="name" placeholder="Il tuo nome" required>
+                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-4">
+                                                <div>
+                                                    <label class="text-xs text-white" for="name"><span>Nome</span></label><br>
+                                                    <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange placeholdercolor" type="text" name="name"  id="name" placeholder="Il tuo nome" required>
+                                                </div>
+        
+                                                <div>
+                                                    <label class="text-xs text-white" for="mail">Indirizzo E-mail</label><br>
+                                                    <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange placeholdercolor" type="text" name="mail"  id="mail" placeholder="La tua e-mail" required>
+                                                </div>
+                                            </div>
                                         </td>
-                                        <td>
-                                            <label class="text-xs text-white" for="mail">Indirizzo E-mail</label><br>
-                                            <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange" type="text" name="mail"  id="mail" placeholder="La tua e-mail" required>
-                                        </td>
-                                    </tr>
+                                    </tr>                                    
+
                                     <tr>
-                                        <td colspan="2">
+                                        <td>
                                             <label class="text-xs text-white" for="object">Oggetto</label><br>
-                                            <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange" type="text" name="object"    id="object" placeholder="Di cosa si tratta la mail?" required>
+                                            <input class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange placeholdercolor" type="text" name="object"    id="object" placeholder="Di cosa si tratta la mail?" required>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2">
+                                        <td>
                                             <label class="text-xs text-white" for="message">Messaggio</label><br>
-                                            <textarea class="w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange" name="message" id="message"   cols="30" rows="10" placeholder="Scrivi qualcosa..." required></textarea>
+                                            <div class="Messaggio textarea w-full rounded bg-sp-lightyellow p-1 focus:outline-none focus:ring focus:ring-sp-darkorange placeholdercolor" role="textbox" contenteditable required></div> 
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" class="text-center pt-2">
+                                        <td class="text-center pt-2">
                                             <button class="bg-sp-darkorange hover:bg-sp-darkeryellow text-sp-lightyellow hover:text-sp-brown hover:shadow-md py-2 px-4 rounded  transition ease-in-out cursor-pointer">
                                                 <input class="uppercase font-bold tracking-wide cursor-pointer" type="submit" value="Invia">
                                             </button>

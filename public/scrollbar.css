@@ -13,3 +13,11 @@ iframe.floatingchat-container {
     margin-left: 10px;
     margin-top: -5px;
 }
+
+.Messaggio[contenteditable]:empty::before {
+    content: "Scrivi qualcosa...";   
+}
+
+.placeholdercolor::placeholder, .placeholdercolor[contenteditable]:empty::before {    
+    color: grey;
+}
